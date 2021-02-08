@@ -1,0 +1,136 @@
+
+/*GENERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: #3659dc;
+}
+
+
+
+
+/*CABECERA*/
+
+header{
+    width: 100%
+}
+
+
+
+div.logo_arriba{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+div.logo_arriba hr{
+    width: 35%;
+    display: block;
+    margin: auto;
+    border: 0 none #f8f4f4;
+    border-top: 3px solid #f8f4f4;
+    height: 1px;
+    z-index: 2;
+    position: relative;
+    top: -19px;
+}
+
+
+#logoarriba{
+    position: relative;
+    width: 180px;
+    height: 180px;;
+    z-index: 3;
+}
+
+
+
+/*CUERPO*/
+
+
+
+#main{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8f4f4;
+    
+}
+
+#main h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+div.contenedor{
+    clear: both;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    max-width: 1020px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0 5px;
+}
+
+li a:active,a:hover{
+    color: white;
+}
+
+li a:link,a:visited{
+    color: white;
+}
+
+
+
+/*PIE*/
+
+div.logo_abajo{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+div.logo_abajo hr{
+    width: 35%;
+    display: block;
+    margin: auto;
+    border: 0 none #f8f4f4;
+    border-bottom: 3px solid #f8f4f4;
+    height: 1px;
+    z-index: 2;
+    position: relative;
+    bottom: -20px;
+    
+}
+
+#logoabajo{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    z-index: 3;
+}
+
+
+/*FUENTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+

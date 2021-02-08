@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background:  #2b46a7;
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+header,
+section,
+footer,
+aside,
+span,
+nav,
+article,
+figure,
+figcaption,
+hgroup {
+    display: block;
+}
+
+
+#principal {
+    width: 960px;
+    height: 1000px;
+    margin: 0px auto;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px black;
+}
+
+p {
+    font-size: 16pt;
+    font-family: Helvetica;
+}
+
+
+
+/*Columna Izquierda*/
+
+#panellateral {
+    background-color: #333333;
+    width:  320px;
+    height: 1000px;
+    float: left;
+}
+
+#fotoperfil {
+    float: right;
+    width: 14em;
+    margin: 30px 48px;
+    box-shadow: 0px 0px 8px black;
+}
+
+
+.datos1 {
+    width:  320px;
+}
+
+.datos1 p{
+    color: #fff;
+}
+
+.datos1 h1 {
+    text-align: center;
+    font-size: 14pt;
+    color: #999999;
+}
+
+.datos1 h2 {
+    font-size: 12pt;
+    color: #fff;
+}
+
+.alineacion {
+    margin: 20px;
+    font-size: 14pt;
+}
+
+.barraabajo {
+    width: 260px;
+    height: 10px;
+    border: #fff 2px solid;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.barraarriba1 {
+    margin: -12px 2px;
+    width: 80%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+.barraarriba2 {
+    margin: -12px 2px;
+    width: 50%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+.barraarriba3 {
+    margin: -12px 2px;
+    width: 65%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+.barraarriba4 {
+    margin: -12px 2px;
+    width: 80%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+.barraarriba5 {
+    margin: -12px 2px;
+    width: 90%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+.barraarriba6 {
+    margin: -12px 2px;
+    width: 70%;
+    height: 10px;
+    background-color: #3659dc;
+    z-index: 3;
+}
+
+
+
+/*Columa Derecha*/
+
+
+#datospersonales {
+    margin: 25px 30px;
+    width: 580px;
+    height: auto;
+    float: right;
+}
+
+.datos2 {
+    margin: 25px 30px;
+    width: 580px;
+    height: auto;
+    float: right;
+
+}
+
+
+.datos2 ul{
+    margin: 0px 32px; 
+    font-size: 14pt; 
+}
+
+
+.datos2 p{
+    margin: 0px 10px;
+    
+}
+
+.ubicacionfecha {
+   color: #333333;
+   font-size: 13pt;
+   font: bold;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.fecha { 
+    color: #333333;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
