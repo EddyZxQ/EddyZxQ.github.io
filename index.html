@@ -1,67 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="CSS/estilos.css">
-
-
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="copyright" content="EdgarZxQ">
-    <meta name="author" content="Edgar Lopez Calomarde">
-    <meta name="description" content="portafolio">
-    <meta name="keywords" content="edgar lopez calomarde, edgar lopez calomarde portafolio, EdgarZxQ"> 
-    <title>EddyZxQ</title>
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/paginaMain.css">
+    <link rel="icon" href="/#">
+    <title>edgar</title>
 </head>
 <body>
     <header>
+            <nav id="menu">
+                <button id="btnToggle">></button>
 
-        <div class="logo_arriba">
-
-            <img src="images/cara-arriba.png" alt="Logo" id="logoarriba">
-            <hr>
-        </div>
-
+               <div id="desplegable">
+                   <div id="objetosMenu">
+                       <ul>
+                           <li><a href="#proyectos">PROYECTOS</a></li>
+                           <li><a href="#habilidades">HABILIDADES</a></li>
+                           <li><a href="#trabajos">TRABAJOS(WORKING...)</a></li>
+                           <li><a href="#contacto">CONTACTAME</a></li>
+                       </ul>
+                   </div>
+               </div>
+            </nav>
     </header>
-    <section id="main">
+    <main>
+        <section id="principal">
 
-        <div class="contenedor">
+            <div id="presentacion">
 
-            <h1>Don't say cool, say coorll </h1>
+                <img src="images/portatil.gif" alt="portatil codigo maquina" id="portatilgif">
+                <svg id="paleta">
+                    <circle cx="160" cy="220" r="120" fill="#9275FA" id="circulo"/>
+                    <circle cx="400" cy="320" r="60" fill="#F2B7AC" id="circulo"/>
+                </svg>
 
-            <br>
-
-            <div class="links"> 
-                <table>
-                    <ul>
-                        <li><a href="https://www.instagram.com/eltete_edgar/">Instagram</a></li>
-                        <li><a href="https://github.com/EddyZxQ">GitHub</a></li>
-                        <li><a href="portafolio.html">Curriculum</a></li>
-                    </ul>
-
-                    <br>
-
-                    <ul>
-                        <li><a href="mailto:edgarlopezcalomarde@gmail.com">edgarlopezcalomarde@gmail.com</a></li>
-                    </ul>
-
-                </table>
+                <h1>Hola soy Edgar</h1>
+                <p>programador, informatico y estudiante &#128187 &#9749 </p>
             </div>
 
+
+            <div id="modoIluminacion">
+                <div id="solyluna">
+                    <button id="sol"></button>
+                </div>
+            </div>
+
+
+        </section>
+        <div id="cajaOlas">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="contenedorolas"><path id="olas" fill="#ffffff" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,138.7C672,160,768,160,864,170.7C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
-       
-    </section>
 
-    <footer>
 
-        <div class="logo_abajo">
-            <hr>
-            <img src="images/cara-abajo.png" alt="Logo" id="logoabajo">
+        <section id="estadisticas">
 
-        </div>
-         
+            <div id="cajonproyectos">
+                <h1 class="titulo">PROYECTOS</h1>
+
+               <div id="proyectos">
+
+                <div id="proyectosColumna1">
+
+                    <div id="hotelSoler">
+                        <img src="images/hotelSoler.png" alt="HOTEL SOLER" class="imgproyecto">
+
+                        <div class="descripcion">
+
+                            <h2 class="ptitulo">HOTEL SOLER</h2>
+
+                            <p class="pdescripcion">Pagina web creada y diseñada por Edgar Lopez Calomarde,
+                                este es uno de mis mejores proyectos, esta desarollada
+                                desde la pasion, cumple con la funcion de pagina de
+                                reserva de hotel.</p>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="proyectosColumna2">
+                    <div id="clinicaVeterinaria">
+                        <img src="images/clinicaVeterinaria.png" alt="CLINICA VETERINARIA" class="imgproyecto">
+
+                        <div class="descripcion">
+
+                            <h2 class="ptitulo">CLINICA VETERINARIA</h2>
+
+                            <p class="pdescripcion">Pagina web creada y diseñada por Edgar Lopez Calomarde,
+                                esta cumple la funcion de pagina web de una tienda de
+                                mascotas con la posibilidad de pedir cita atraves de
+                                un formulario.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+               </div>
+
+
+            </div>
+
+            <div id="cajonhabilidades">
+                <h1 class="titulo">HABILIDADES</h1>
+
+                <div id="habilidades">
+
+                    <div id="frontend">
+
+                        <h2>FRONTEND</h2>
+
+                        <img src="images/html5.png" alt="HTML5" class="iconoSkill">
+                        <img src="images/css3.png" alt="CSS3" class="iconoSkill">
+
+
+                    </div>
+
+                    <div id="backend">
+
+                        <h2>BACKEND</h2>
+
+                        <img src="images/js.png" alt="javascript" class="iconoSkill">
+                        <img src="images/mysql.png" alt="MySQL" class="iconoSkill">
+
+
+                    </div>
+
+                    <div id="otras">
+
+                        <h2>OTRAS</h2>
+
+                        <img src="images/java.png" alt="java" class="iconoSkill">
+                        <img src="images/vegas.png" alt="vegas" class="iconoSkill">
+                        <img src="images/phothoshop.png" alt="phothoshop" class="iconoSkill">
+                        <img src="images/figma.png" alt="figma" class="iconoSkill">
+                        <img src="images/camptasia.png" alt="camptasia" class="iconoSkill">
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="trabajos">
+                <h1 class="titulo">TRABAJOS</h1>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="contacto">
+
+
+            <h1 id="tituloContacto">CONTACTO</h1>
+
+
+
+                <div id="emailContacto">
+
+
+                    <div id="emailContactoContenido">
+
+                        <h2>ESTE ES MI EMAIL DE CONTACTO:</h2>
+
+
+                        <p id="mail">edgarlopezcalomarde@gmail.com</p>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer id="pie">
+
+
+        <small>Pagina web desarrollada y diseñada por Edgar Lopez Calomarde. ©2021. Todos los derechos reservados</small>
+
+            <div id="redesSociales">
+
+                <a href="https://www.instagram.com/eltete_edgar/"><img src="images/instagram.png" alt="INSTAGRAM"></a>
+                <a href=""><img src="images/github.png" alt="GITHUB"></a>
+                <a href=""><img src="images/linkedin.png" alt="LINKEDIN"></a>
+
+            </div>
+
     </footer>
 
+    <script src="JS/btnDespliegue.js"></script>
+    <script src="JS/modoOscuro.js"></script>
+    <script src ="JS/redireccionar.js"></script>
 </body>
 </html>

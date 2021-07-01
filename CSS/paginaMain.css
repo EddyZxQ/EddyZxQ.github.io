@@ -1,0 +1,621 @@
+root{
+
+    /*PALETA DE COLORES LIGHT*/
+
+    --blanco: #ffffff;
+    --amarillo: #FAF3AF;
+    --verde: #60E0AE;
+    --morado: #9275FA;
+    --carne: #F2B7AC;
+    --gris: #b4b4b4;
+    --azul: #34bbf3;
+
+
+
+    /*PALETA DE COLORES OSCURA*/
+    --azulOscuro: #003482;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: var(--blanco) ;
+    -webkit-font-smoothing: antialiased;
+}
+
+header{
+    background-color: #34bbf3;
+}
+
+#principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #34bbf3;
+}
+
+#paleta{
+    width: 600px;
+    height: 400px;
+
+
+}
+
+
+#presentacion h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+
+}
+
+
+#presentacion p{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.titulo{
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+#tituloContacto{
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#portatilgif{
+    position: relative;
+    width: 80px;
+    left: 400px;
+}
+
+#estadisticas{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+
+}
+
+#cajonproyectos{
+    margin-top: 100px;
+}
+
+#menu{
+    position: relative;
+}
+
+#btnToggle{
+    font-size: 45px;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    background-color: #9275FA;
+    border-radius: 100px;
+    width: 72px;
+    text-align: center;
+    position: absolute;
+    border: transparent;
+    transition: 2s ease all;
+
+
+}
+
+#btnToggle.active{
+    font-size: 45px;
+    color: #ffffff;
+    margin: 20px;
+    padding: 10px;
+    background-color: #9275fa;
+    border-radius: 50px;
+    width: 72px;
+    text-align: center;
+    transform: rotate(90deg);
+    position: absolute;
+    transition: 1s ease all;
+
+}
+
+#btnToggle:hover{
+    box-shadow: rgb(125, 100, 215) 0 0 0 3px, rgb(255, 255, 255) 0 0 0 6px;
+}
+
+
+#objetosMenu{
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    height: 200px;
+    width: 210px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    animation-name: desplegar;
+    animation-duration: 0.2s;
+}
+
+
+#objetosMenu ul {
+    padding: 5px;
+    list-style-type: none;
+    border-radius: 20px;
+    width: 200px;
+    background-color: #ffffff;
+    animation-name: desplegar;
+    animation-duration: 0.2s;
+}
+
+
+
+#objetosMenu li {
+    animation-name: aparecer;
+    animation-duration: 2.4s;
+
+}
+
+
+
+#objetosMenu li a {
+    border-radius: 20px;
+    display: block;
+    margin: 2px;
+    color: #000;
+    padding: 8px 18px;
+    text-decoration: none;
+
+}
+
+
+#objetosMenu li a:hover {
+    border-radius: 20px;
+    background-color:  #9275FA;
+    color: white;
+}
+
+#objetosMenu.oscuro {
+    background-color: #383838;
+    color: white;
+}
+#objetosMenu.oscuro ul {
+    background-color: #383838;
+
+}
+
+#objetosMenu.oscuro ul li a{
+    color: white;
+}
+
+#desplegable {
+    display: none;
+    
+
+}
+
+#desplegable.active {
+    display: block;
+
+}
+
+#cajaOlas{
+    background: linear-gradient(180deg, rgb(52, 187, 243) 0%, rgb(255, 255, 255) 100%);
+}
+
+
+
+#modoIluminacion{
+ position: relative;
+}
+
+#solyluna{
+    position: absolute;
+}
+
+
+#sol{
+    font-size: 45px;
+    margin: 20px;
+    padding: -10px 20px;
+    background-color: #FAF3AF;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    position: absolute;
+    border: transparent;
+    transition: 2s ease all;
+
+
+}
+
+
+#sol.luna{
+    font-size: 45px;
+    margin: 20px;
+    padding: -10px 20px;
+    background-color: #b6b6b6;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    position: absolute;
+    border: transparent;
+    transition: 2s ease all;
+
+}
+
+#sol:hover{
+    box-shadow: rgb(255, 235, 130) 0 0 0 3px, rgb(255, 255, 255) 0 0 0 6px;
+}
+
+#sol.luna:hover{
+    box-shadow: rgb(123, 121, 121) 0 0 0 3px, rgb(255, 255, 255) 0 0 0 6px;
+}
+
+
+
+#principal.oscuro{
+    background-color: #003482;
+    color: white;
+}
+
+#cajaOlas.oscuro{
+    background: linear-gradient(180deg, rgb(0, 52, 130) 0%, rgb(26, 27, 30) 100%);
+}
+
+#olas.oscuro{
+    fill: #1A1B1E;
+}
+
+#estadisticas.oscuro,#contacto.oscuro,#pie.oscuro{
+    background-color: #1A1B1EFF;
+    color: white;
+}
+
+
+/*HABILIDADES*/
+
+
+#habilidades{
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+#frontend{
+    padding: 10px;
+    margin: 15px;
+    color: #1A1B1E;
+    background-color: #d4d5db;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+}
+#backend{
+    padding: 10px;
+    margin: 15px;
+    color: #1A1B1E;
+    background-color: #d4d5db;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+
+#otras{
+    padding: 10px;
+    margin: 15px;
+    color: #1A1B1E;
+    background-color: #d4d5db;
+    width: 350px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+
+
+}
+
+.iconoSkill{
+    margin: 10px;
+}
+
+#otras.oscuro, #backend.oscuro, #frontend.oscuro{
+    background-color: #383838;
+    color: white;
+
+}
+
+
+.ptitulo{
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.pdescripcion{
+    font-family: 'JetBrains Mono', monospace;
+}
+
+
+#proyectos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#proyectosColumna1{
+    display: flex;
+    flex-direction: column;
+}
+
+#proyectosColumna2{
+    display: flex;
+    flex-direction: column;
+}
+
+#hotelSoler, #clinicaVeterinaria{
+    padding: 10px;
+    margin: 15px;
+    color: #1A1B1E;
+    background-color: #d4d5db;
+    width: 540px;
+    height: 300px;
+    text-align: center;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#hotelSoler.oscuro{
+    background-color: #383838;
+    color: white;
+}
+
+#clinicaVeterinaria.oscuro{
+    background-color: #383838;
+    color: white;
+}
+
+.imgproyecto{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: auto 20px;
+}
+
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    margin-right: 10px;
+}
+
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#emailContacto{
+    padding: 10px;
+    color: #1A1B1E;
+    background-color: #d4d5db;
+    text-align: center;
+    border-radius: 20px;
+    height: 200px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+#emailContactoContenido{
+    margin: auto 0  ;
+}
+
+#emailContacto.oscuro{
+    background-color: #383838;
+    color: white;
+}
+
+
+
+
+#pie{
+padding: 20px;
+}
+
+
+
+
+
+/*TODAVIA NO HE CURRADO*/
+#trabajos{
+    display: none;
+}
+
+
+#pie{
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+#redesSociales img{
+    width: 50px;
+}
+
+
+
+/*ANIMACIONES*/
+
+@keyframes desplegar {
+    from {height: 10px;}
+    to {height: 200px;}
+}
+
+@keyframes plegar  {
+    from {height: 200px;}
+    to {height: 10px;}
+}
+
+
+@keyframes aparecer {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+}
+
+
+
+/*RESPONSIBE WEB  MAX 1146PX*/
+@media screen and (max-width: 1146px) {
+
+    #proyectos{
+        flex-direction: column;
+    }
+
+    #habilidades{
+        flex-direction: column;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+}
+
+@media screen and (max-width: 910px) {
+#paleta{
+    display: none;
+}
+
+    #principal{
+        flex-direction: column;
+    }
+
+
+    #modoIluminacion{
+        position: relative;
+        left: 70%;
+
+
+    }
+
+    #presentacion{
+        margin: 50px auto;
+    }
+
+    #portatilgif{
+        display: none;
+    }
+
+    #btnToggle{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 628px) {
+
+
+    #hotelSoler{
+        width: 90%;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+
+    #hotelSoler img{
+        margin: auto;
+    }
+
+    #clinicaVeterinaria{
+        width: 90%;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    #clinicaVeterinaria img{
+        margin: auto;
+    }
+
+    #frontend{
+        width: 90%;
+    }
+
+    #backend{
+        width: 90%;
+    }
+
+    #otras{
+        width: 90%;
+
+    }
+
+    #emailContacto{
+        width: 90%;
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 610px) {
+
+    #presentacion{
+        margin: 20px;
+    }
+
+}
+
+/*BARRA DE DESPLAZAMIENTO*/
+
+/*Ajustes barra desplazamiento*/
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1A1B1EFF;
+
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9275FA;
+    border-radius: 50px;
+}
+
